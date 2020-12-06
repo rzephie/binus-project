@@ -1,0 +1,30 @@
+package com.example.helloworld;
+import java.util.Scanner;
+public class tebakangka {
+    public static void main(String[] args){
+        //input
+        int random, tebak, jumblah;
+        random =(int) (Math.random() * 100);
+        System.out.println("Tebaklah angka antara 1-100");
+        Scanner masukan = new Scanner(System.in);
+        jumblah = 0;
+
+        do {
+            jumblah++;
+            System.out.println("Masukkan Tebakan Anda : ");
+            tebak = masukan.nextInt();
+
+            if (jumblah == 5) {
+                System.out.println("Jawaban yang benar adalah: " + random);
+                break;
+            } else if (tebak < random) {
+                System.out.println("Terlalu kecil");
+            } else if (tebak == random) {
+                System.out.println("Benar! Setelah " + jumblah + " kali menebak!");
+            } else if (tebak > random) {
+                System.out.println("Terlalu Besar!");
+            }
+        } while (tebak != random);
+
+    }
+}
