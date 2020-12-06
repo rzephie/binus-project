@@ -1,0 +1,27 @@
+package com.example.helloworld;
+import java.util.Scanner;
+import java.lang.Math;
+public class HelloWorld {
+    public static void main(String[] args) {
+        int angka1, angka2, max, min, kuadrat1, kuadrat2;
+        double pangkat;
+
+        Scanner masukan = new Scanner(System.in);
+        System.out.println("masukkan angka pertama:");
+        angka1 = masukan.nextInt();
+        System.out.println("masukkan angka kedua:");
+        angka2 = masukan.nextInt();
+
+        System.out.println("Hasil:");
+        max = Math.max(angka1,angka2);
+        System.out.println("angka terbesar adalah :"+ max);
+        min = Math.min(angka1,angka2);
+        System.out.println("angka terkecil adalah :"+ min);
+        pangkat = Math.pow(angka1,angka2);
+        System.out.println(angka1 + " pangkat " + angka2 + " hasilnya : " + pangkat);
+        kuadrat1 = angka1 * angka1;
+        System.out.println(angka1 + " kuadrat hasilnya : " + kuadrat1);
+        kuadrat2 = angka2 * angka2;
+        System.out.println(angka2 + " kuadrat hasilnya : " + kuadrat2);
+    }
+}
