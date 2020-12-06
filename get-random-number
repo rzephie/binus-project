@@ -1,0 +1,19 @@
+package com.example.helloworld;
+import java.util.Scanner;
+
+public class HelloWorld {
+    public static void main(String[] args) {
+        int angka1, angka2, random;
+        Scanner masukan = new Scanner(System.in);
+        System.out.println("input angka pertama :");
+        angka1 = masukan.nextInt();
+        System.out.println("input angka kedua :");
+        angka2 = masukan.nextInt();
+        random = angka1 + (int) (Math.random()  * angka2);
+        if (random % 2 == 0)
+        System.out.println("random generated number : " + random);
+        else
+            System.out.println("random generated number : " + (random + 1));
+
+    }
+}
